@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Learn English</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<%= stylesheet_link_tag    'home', media: 'all' %>
+		<%= csrf_meta_tags %>	
+	</head> 
+<body>
+<!-- Full Body Container -->
+<div id="container"> 
+	<!-- Start Header Section -->
+  	<div class="hidden-header"></div>
+    <!-- Start Header Section -->
+    <%= render 'layouts/home/header' %>
+  	<!-- End Header Section --> 
+  
+  	<!-- Start Home Page Slider -->
+  	<%= render 'layouts/home/slider' %>
+  	<!-- End Home Page Slider --> 
+    
+    <!-- Start Content -->
+  	<div id="content">
+	    <div class="container">
+	    	<div class="page-content">
+	        	<%= yield %>
+	        </div>
+	    </div>
+	</div>
+  	<!-- End content --> 
+  	<%= render 'layouts/home/footer' %>
+   
+</div>
+<!-- End Full Body Container --> 
+
+<!-- Go To Top Link --> 
+<a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+<div id="loader">
+	<div class="spinner">
+    	<div class="dot1"></div>
+    	<div class="dot2"></div>
+  	</div>
+</div>
+    <%= javascript_include_tag 'home' %>
+</body>
+</html>
