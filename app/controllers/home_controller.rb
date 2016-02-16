@@ -1,3 +1,3 @@
-class HomeController < ApplicationController
+class HomeController < ActionController::Base
 	layout 'home'
 end
