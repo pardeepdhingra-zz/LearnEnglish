@@ -144,7 +144,7 @@ p strong {
 	margin-right: 10px;
 }
 
-a.main-button, input[type="submit"] {
+a.main-button {
     display: inline-block;
     text-decoration: none;
     color: #fff;
@@ -163,17 +163,13 @@ a.main-button, input[type="submit"] {
     -o-transition: all 0.2s ease-in-out;
 }
 
-a.main-button:hover, input[type="submit"]:hover {
+a.main-button:hover {
 	background: #444;
 	color: #fff;
 }
 
 a.main-button i {
 	font-size: 1.2em;
-}
-
-input[type="submit"] {
-	border: none;
 }
 
 .tooltip .tooltip-inner {
@@ -1068,10 +1064,6 @@ label {
 label .required {
 	color: #ED2C3A;
 	margin-left: 2px;
-}
-
-input[type="submit"] {
-    outline: none;
 }
 
 .widget-search input[type="search"],
@@ -5276,3 +5268,11 @@ ul.list-group li a:hover, ul.list-group li a.list-group-item {background:none;}
 .custom-collapse button i {float:right; margin-right:5px;}
 
 .sidebar .widget h4.ebook-nav { margin:0; padding:0;}
+
+#signin-up {
+  margin-top: 70px;
+}
+
+.btn-link {
+  color: rgba(0,0,0,.7);
+}
