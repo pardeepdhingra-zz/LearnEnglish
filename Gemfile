@@ -32,7 +32,11 @@ group :development do
 
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+
+  #open mails in browser instead of sending
+  gem 'letter_opener'
 end
 
 gem 'mongoid', '~> 4'
 gem 'bson_ext'
+gem 'devise'

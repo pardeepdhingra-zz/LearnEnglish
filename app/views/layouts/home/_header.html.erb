@@ -13,7 +13,18 @@
           <ul class="nav navbar-nav navbar-right">
             <li> <a class="active" href="/">Home</a></li>
             <li><a href="#">Contact</a> </li>
-            <li><a href="#">Sign In / Up</a> </li>
+            <% if user_signed_in? %>
+              <li>
+                <%= link_to 'Sign out', destroy_user_session_path, method: :delete %>
+              </li>
+            <% else %>
+              <li>
+                <%= link_to 'Sign in', new_user_session_path %>
+              </li>
+              <li>
+                <%= link_to 'Sing up', new_user_registration_path %>
+              </li>
+            <% end %>
           </ul>
           <!-- End Navigation List --> 
         </div>
